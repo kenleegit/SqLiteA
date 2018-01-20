@@ -1,12 +1,12 @@
-﻿using SqLiteA.iOS;
+﻿using SqLiteA;
 using SQLite;
 using System;
 using System.IO;
 
 [assembly: Xamarin.Forms.Dependency(typeof(DatabaseConnection_iOS))]
-namespace SqLiteA.iOS
+namespace SqLiteA
 {
-    public class DatabaseConnection_iOS
+    public class DatabaseConnection_iOS : IDatabaseConnection
     {
         public SQLiteConnection DbConnection()
         {

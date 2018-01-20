@@ -7,8 +7,7 @@ namespace SqLiteA
         public App()
         {
             InitializeComponent();
-
-            MainPage = new SqLiteAPage();
+            MainPage = new NavigationPage(new CustomersPage());
         }
 
         protected override void OnStart()
